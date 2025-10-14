@@ -48,8 +48,8 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
     line-height: 1.6;
-    color: var(#000 text-primary);
-    background-color: var(#000 bg-primary);
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
     font-size: 14px;
 }
 
@@ -1601,7 +1601,7 @@ html {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px #df760b(223, 118, 11, 0.1);
+    box-shadow: 0 0 0 3px rgba(223, 118, 11, 0.1);
 }
 
 .form-group textarea {
@@ -1659,7 +1659,7 @@ html {
 /* Footer */
 .footer {
     background: var(--text-primary); /* Usando a variável para o fundo */
-    color: hwb(38 0% 8%); /* Cor do texto */
+    color: hsl(38, 100%, 80%); /* Cor do texto */
     padding: 3rem 0 1rem;
 }
 
@@ -1678,7 +1678,7 @@ html {
 }
 
 .footer-description {
-    color: #d3670f;
+    color: #000000;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -1690,7 +1690,7 @@ html {
 
 .social-link {
     background: var(#000 primary);
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 0.5rem;
     border-radius: var(--radius);
     text-decoration: none;
@@ -2180,12 +2180,12 @@ html {
 
 .cart-item-name {
     font-weight: 600;
-    color: var(#d3670f text-primary);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
 .cart-item-price {
-    color: var(#000 primary);
+    color: var(--primary);
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -2375,7 +2375,7 @@ html {
 
 .mascot-bubble p {
     margin: 0;
-    color: var(#000 text-primary);
+    color: var(--text-primary);
     font-size: 0.875rem;
     line-height: 1.5;
 }
@@ -2417,7 +2417,7 @@ html {
 
 .checkout-summary h4 {
     margin-bottom: 1rem;
-    color: var(#b8620a text-primary);
+    color: var(--text-primary);
     font-size: 1.25rem;
 }
 
@@ -2456,18 +2456,18 @@ html {
 
 .checkout-item .item-name {
     font-weight: 500;
-    color: var#f59e0b text-primary);
+    color: var(--text-primary);
     font-size: 0.875rem;
 }
 
 .checkout-item .item-quantity {
     font-size: 0.75rem;
-    color: var(#000 text-secondary);
+    color: var(--text-secondary);
 }
 
 .checkout-item .item-total {
     font-weight: 600;
-    color: var(#ff7b10 primary);
+    color: var(--primary);
 }
 
 .checkout-total {
@@ -2475,15 +2475,15 @@ html {
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-    border-top: 2px solid var( #d3670f primary);
+    border-top: 2px solid var(--primary);
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(#d3670f text-primary);
+    color: var(--text-primary);
 }
 
 .payment-methods h4 {
     margin-bottom: 1.5rem;
-    color: var(#d3670f text-primary);
+    color: var(--text-primary);
     font-size: 1.25rem;
 }
 
@@ -2507,18 +2507,18 @@ html {
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
-    color: var(#000 text-secondary);
+    color: var(--text-secondary);
     transition: all 0.3s ease;
 }
 
 .payment-tab:hover {
-    color: var(#d3670fprimary);
-    background: var(#000 bg-secondary);
+    color: var(--primary);
+    background: var(--bg-secondary);
 }
 
 .payment-tab.active {
-    color: var(#000 primary);
-    border-bottom-color: var(##000 primary);
+    color: var(--primary);
+    border-bottom-color: var(--primary);
     background: var(--bg-secondary);
 }
 
@@ -2538,12 +2538,12 @@ html {
 
 .pix-container h5 {
     font-size: 1.5rem;
-    color: var(hwb(27 6% 18%) text-primary);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
 .pix-container > p {
-    color: var(lab(61.88% 56.59 65.34) text-secondary);
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
@@ -2625,7 +2625,7 @@ html {
 .pix-mascot p {
     flex: 1;
     margin: 0;
-    color: var(#000 text-primary);
+    color: var(--text-primary);
     font-weight: 500;
 }
 
@@ -2853,7 +2853,7 @@ html {
     }
 }
 
-/* Print Styles#f59e0b */
+/* Print Styles */
 @media print {
     .header,
     .mascot,
@@ -3030,7 +3030,7 @@ html {
 }
 
 .admin-product-info h4 {
-    color: var(#000 text-primary);
+    color: var(--text-primary);
     font-size: 1.125rem;
     margin-bottom: 0.25rem;
     overflow: hidden;
@@ -3039,14 +3039,14 @@ html {
 }
 
 .admin-product-info .product-category {
-    color: var(#f59e0b primary);
+    color: var(--primary);
     font-size: 0.875rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
 
 .admin-product-info .product-price {
-    color: var(#000 text-primary);
+    color: var(--text-primary);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
